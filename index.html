@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dat's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nguyen Duc Tuan Dat</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contant">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nguyen Duc Tuan Dat</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile_picture.png" alt="Tuan Dat picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title"> Nguyen Duc Tuan Dat</h1>
+            <p class="section_text_p2">Data Analyst</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/DBlue04'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get to Know More</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Certificates</h3>
+                        <p> My Google Data Analytics<br /> 
+                            Google Data Analytics Professional<br />
+                            IBM Data Analyst Professional<br />
+                        </p>
+                        
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p> Major in Data Science <br/> Information Technology, HCMUS <br />
+                            Senior Student - GPA: 3.3/4</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p> I'm passionate about the data world and always eager to grow, 
+                        continuously expanding my knowledge and skills in data and related 
+                        fields.</p>
+                </div>
+            </div>
+        </div> 
+        <img src="./assets/arrow.png" alt="Arrow icon" class = 'icon arrow' onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_text_p1"> Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experience</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experience</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience" class="icon">
+                            <div>
+                                <h3>Power BI</h3>
+                                <p>Experience</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience" class="icon">
+                            <div>
+                                <h3>Tableau</h3>
+                                <p>Experience</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class = 'icon arrow' onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-containers">
+            <div class="article-container">
+                <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Project ope</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DBlue04/covid_19_dash_plotly'">
+                    Github
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DBlue04/covid_19_dash_plotly'">
+                    Live Demo
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src = 'script.js'></script>
+</body>
+</html>
