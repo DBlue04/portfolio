@@ -1,3 +1,4 @@
-Im on the process of finishing my web portfolio.
+I'm on the process of finishing my web portfolio.
 
-Welcome to visits my portfolio at: <a href='https://nguyenductuandat-portfolio.netlify.app/'>
+Welcome to visits my portfolio at: <a href="https://www.example.com">Dat's Portfolio</a>
+
